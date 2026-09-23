@@ -1,0 +1,22 @@
+docker build -t {name}:{tag} - builds a docker image from a dockerfile
+    -t sets a custom name/tag
+    
+docker images - list of images locally
+
+docker ps -a - list of running containers
+    -a shows all containers, running or stopped
+
+docker pull nginx:tag - allows you to pull a certain image from the docker hub followed by the tag, if no tag is attached it will do the latest
+
+docker run -d -p {host_port}:{container_port} ngix:tag - runs the image, starts the container based on image
+    --name {name} - give a custom name to a container
+    -d flag allows a container to run in background
+    -p {host_port}:{container_port} publish container port to host - 1 service per port - should use same port on both host and container
+    you can run this without running the pull and it will search for what is avaiable on docker hub
+
+docker start {container_id} - starts a previously stopped container
+
+docker stop {container_id} - stops a running container
+
+docker logs {container_id} - view logs from service running inside container
+ 
