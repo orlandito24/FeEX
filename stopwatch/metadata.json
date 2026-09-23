@@ -1,0 +1,7 @@
+{
+  "name": "Stopwatch",
+  "description": "Precision stopwatch with reverse countdown, negative time, analog, digital, and ring display modes, time adjustments, and orientation history log.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
